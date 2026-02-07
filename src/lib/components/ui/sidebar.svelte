@@ -61,15 +61,24 @@
 			submenu: []
 		},
 		{
+			id: 'roles',
+			href: '/v1/roles',
+			label: 'Roles',
+			icon: SettingsIcon,
+			hasSubmenu: false,
+			submenu: []
+		},
+		{
 			id: 'usuarios',
 			label: 'Usuarios',
 			icon: UsersIcon,
+			href: '/v1/usuarios',
 			hasSubmenu: true,
 			submenu: [
 				{
 					id: 'usuarios-administradores',
 					label: 'Administradores',
-					href: '/v1/usuarios/administradores'
+					href: '/v1/usuarios/administrador'
 				},
 				{
 					id: 'usuarios-empleados',

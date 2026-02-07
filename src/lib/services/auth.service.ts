@@ -2,9 +2,9 @@ import { apiAvicor } from '$lib/config/apiAvicor.config';
 import type { LoginCredentials, LoginResponse, User } from '$lib/interfaces';
 
 export class AuthService {
-	private static readonly TOKEN_KEY = 'auth_token';
-	private static readonly TOKEN_EXPIRY_KEY = 'auth_token_expiry';
-	private static readonly USER_KEY = 'user_data';
+	private static readonly TOKEN_KEY = 'auth_token_milenium';
+	private static readonly TOKEN_EXPIRY_KEY = 'auth_token_expiry_milenium';
+	private static readonly USER_KEY = 'user_data_milenium';
 
 	static getToken(): string | null {
 		try {

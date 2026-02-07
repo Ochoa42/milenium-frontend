@@ -3,3 +3,4 @@ export * from './error.interface';
 export * from './user.interface';
 export * from './menuSidebarItem.interface';
 export * from './dropdownOption.interface';
+export * from './rol.interface';

@@ -31,50 +31,50 @@
 	const handleLogin = async (event: Event): Promise<void> => {
 		event.preventDefault();
 		await goto('/v1/inicio');
-		// errors = [];
-		// loginError = '';
-		// const validation = validateLoginForm(email, password);
-		// if (!validation.isValid) {
-		// 	errors = validation.errors;
-		// 	return;
-		// }
+		errors = [];
+		loginError = '';
+		const validation = validateLoginForm(email, password);
+		if (!validation.isValid) {
+			errors = validation.errors;
+			return;
+		}
 
-		// const credentials: LoginCredentials = {
-		// 	email: email.trim(),
-		// 	password: password
-		// };
+		const credentials: LoginCredentials = {
+			email: email.trim(),
+			password: password
+		};
 
-		// authStore.setLoading(true);
+		authStore.setLoading(true);
 
-		// try {
-		// 	const response = await AuthService.login(credentials);
+		try {
+			const response = await AuthService.login(credentials);
 
-		// 	authStore.setUser(response.data);
+			authStore.setUser(response.data);
 
-		// 	await goto('/v1/dashboard');
-		// } catch (error) {
-		// 	console.error('Error durante el login:', error);
+			await goto('/v1/inicio');
+		} catch (error) {
+			console.error('Error durante el login:', error);
 
-		// 	if (error instanceof AppError) {
-		// 		switch (error.type) {
-		// 			case ErrorType.AUTHENTICATION:
-		// 				loginError = 'Credenciales incorrectas. Verifica tu email y contraseña.';
-		// 				break;
-		// 			case ErrorType.NETWORK:
-		// 				loginError = 'Error de conexión. Verifica tu conexión a internet.';
-		// 				break;
-		// 			case ErrorType.SERVER:
-		// 				loginError = 'Error del servidor. Intenta nuevamente en unos minutos.';
-		// 				break;
-		// 			default:
-		// 				loginError = error.message || 'Error desconocido durante el login.';
-		// 		}
-		// 	} else {
-		// 		loginError = 'Error inesperado. Intenta nuevamente.';
-		// 	}
-		// } finally {
-		// 	authStore.setLoading(false);
-		// }
+			if (error instanceof AppError) {
+				switch (error.type) {
+					case ErrorType.AUTHENTICATION:
+						loginError = 'Credenciales incorrectas. Verifica tu email y contraseña.';
+						break;
+					case ErrorType.NETWORK:
+						loginError = 'Error de conexión. Verifica tu conexión a internet.';
+						break;
+					case ErrorType.SERVER:
+						loginError = 'Error del servidor. Intenta nuevamente en unos minutos.';
+						break;
+					default:
+						loginError = error.message || 'Error desconocido durante el login.';
+				}
+			} else {
+				loginError = 'Error inesperado. Intenta nuevamente.';
+			}
+		} finally {
+			authStore.setLoading(false);
+		}
 	};
 
 	// Función para manejar el toggle de password

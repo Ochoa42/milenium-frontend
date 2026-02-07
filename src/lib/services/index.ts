@@ -1,2 +1,4 @@
 export * from './error.service';
 export * from './auth.service';
+export * from './rol.service';
+export * from './usuario.service';
