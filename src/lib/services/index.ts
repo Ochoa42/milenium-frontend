@@ -2,3 +2,7 @@ export * from './error.service';
 export * from './auth.service';
 export * from './rol.service';
 export * from './usuario.service';
+export * from './zona.service';
+export * from './cliente.service';
+export * from './proveedor.service';
+export * from './empleado.service';

@@ -57,3 +57,5 @@ export { default as HomeDotIcon } from './homeDotIcon.svelte';
 export { default as HelpOctagonIcon } from './helpOctagonIcon.svelte';
 export { default as CashIcon } from './cashIcon.svelte';
 export { default as TrendingUpIcon } from './trendingUpIcon.svelte';
+export { default as BellIcon } from './bellIcon.svelte';
+export { default as SettingsIcon } from './settingsIcon.svelte';

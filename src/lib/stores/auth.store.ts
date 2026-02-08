@@ -19,5 +19,10 @@ export const authStore = {
 
 	setLoading: (loading: boolean) => {
 		isLoading.set(loading);
+	},
+
+	logout: () => {
+		user.set(null);
+		AuthService.logout();
 	}
 };

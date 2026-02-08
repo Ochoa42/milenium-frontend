@@ -82,7 +82,7 @@
 			transition:scale={{ duration: 200, start: 0.95 }}
 		>
 			<div class="border-b border-light-four px-6 py-4">
-				<h2 class="text-xl font-semibold text-light-black">
+				<h2 class="text-xl font-semibold text-light-two_d">
 					{zona ? 'Editar Zona' : 'Nueva Zona'}
 				</h2>
 			</div>

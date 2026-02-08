@@ -4,3 +4,7 @@ export * from './user.interface';
 export * from './menuSidebarItem.interface';
 export * from './dropdownOption.interface';
 export * from './rol.interface';
+export * from './cliente.interface';
+export * from './zona.interface';
+export * from './proveedor.interface';
+export * from './empleado.interface';

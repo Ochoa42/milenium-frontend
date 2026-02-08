@@ -178,7 +178,7 @@
 					class="flex w-full flex-col items-center justify-center border-b border-light-accent pb-4"
 				>
 					<p class="mt-2 text-xs text-light-accent">Estas en</p>
-					<p class="mt-2 text-sm font-semibold text-light-one">Avicola Avicor</p>
+					<p class="mt-2 text-sm font-semibold text-light-one">Milenium</p>
 				</div>
 			{:else}
 				<div class="flex justify-center">

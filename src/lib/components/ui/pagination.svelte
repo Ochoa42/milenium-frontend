@@ -103,10 +103,10 @@
 >
 	<!-- Info de resultados -->
 	<div class="flex items-center gap-4">
-		<p class="text-sm text-light-two">
-			Mostrando <span class="font-medium text-light-two_d">{startItem}</span> a
-			<span class="font-medium text-light-two_d">{endItem}</span> de
-			<span class="font-medium text-light-two_d">{total}</span> resultados
+		<p class="text-sm text-light-black">
+			Mostrando <span class="font-medium">{startItem}</span> a
+			<span class="font-medium">{endItem}</span> de
+			<span class="font-medium">{total}</span> resultados
 		</p>
 	</div>
 

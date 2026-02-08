@@ -1,10 +1,12 @@
 import { apiAvicor } from '$lib/config/apiAvicor.config';
 import type { LoginCredentials, LoginResponse, User } from '$lib/interfaces';
+import { TOKEN_KEY, TOKEN_EXPIRY_KEY, USER_KEY } from '$lib/constants';
+import { goto } from '$app/navigation';
 
 export class AuthService {
-	private static readonly TOKEN_KEY = 'auth_token_milenium';
-	private static readonly TOKEN_EXPIRY_KEY = 'auth_token_expiry_milenium';
-	private static readonly USER_KEY = 'user_data_milenium';
+	private static readonly TOKEN_KEY = TOKEN_KEY;
+	private static readonly TOKEN_EXPIRY_KEY = TOKEN_EXPIRY_KEY;
+	private static readonly USER_KEY = USER_KEY;
 
 	static getToken(): string | null {
 		try {
@@ -87,10 +89,10 @@ export class AuthService {
 		}
 	}
 
-	// Método para logout
 	static async logout(): Promise<void> {
 		try {
 			this.clearToken();
+			goto('/auth/sign-in');
 		} catch (error) {
 			this.clearToken();
 			console.warn('Error durante el logout:', error);

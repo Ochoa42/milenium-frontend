@@ -5,7 +5,7 @@
 
 	interface Props {
 		options: DropdownOption[];
-		width: string;
+		width: number;
 		class: string;
 		isOpen: boolean;
 	}
@@ -28,7 +28,8 @@
 {#if isOpen}
 	<div
 		use:clickOutside={() => close()}
-		class="w-[{width}] z-20 rounded-md bg-light-one shadow-lg ring-1 ring-light-four focus:outline-none {className}"
+		class="z-20 rounded-md bg-light-one shadow-lg ring-1 ring-light-four focus:outline-none {className}"
+		style="width: {width}px;"
 		role="menu"
 		aria-orientation="vertical"
 		tabindex="-1"
