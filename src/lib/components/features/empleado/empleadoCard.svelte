@@ -11,7 +11,7 @@
 	let { empleado, onEdit, onDelete }: Props = $props();
 
 	let isDropdownOpen = $state(false);
-	let width: number = $state(16);
+	let width: number = $state(150);
 
 	function getNombreCompleto(): string {
 		return `${empleado.nombre} ${empleado.apellido_paterno} ${empleado.apellido_materno}`.trim();

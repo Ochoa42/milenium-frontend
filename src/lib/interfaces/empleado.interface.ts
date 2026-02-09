@@ -69,7 +69,7 @@ export interface CreateEmpleadoDto {
 	salario_base: number;
 	telefono: string;
 	direccion: string;
-	usuario: {
+	usuario?: {
 		rol_id: string;
 		name_user: string;
 		email: string;

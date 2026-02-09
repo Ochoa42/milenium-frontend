@@ -142,7 +142,7 @@
 			<h1 class="text-3xl font-bold text-light-two">Empleados</h1>
 		</div>
 		<div class="flex items-center gap-3">
-			<Button onclick={openCreateModal} variant="primary" disabled={true}>
+			<Button onclick={openCreateModal} variant="primary">
 				{#snippet leftIcon()}<PlusIcon class="size-5" />{/snippet}
 				Nuevo Empleado
 			</Button>
@@ -256,7 +256,7 @@
 
 <EmpleadoFormModal
 	bind:isOpen={isFormModalOpen}
-	empleado={selectedEmpleado}
+	empleado={null}
 	{roles}
 	onSubmit={handleSubmitEmpleado}
 	onClose={() => (isFormModalOpen = false)}
