@@ -259,13 +259,13 @@
 	{/if}
 </div>
 
-<!-- <ProveedorFormModal
-    bind:isOpen={isFormModalOpen}
-    proveedor={selectedProveedor}
-    {zonas}
-    onSubmit={handleSubmitProveedor}
-    onClose={() => (isFormModalOpen = false)}
-/> -->
+<ProveedorFormModal
+	bind:isOpen={isFormModalOpen}
+	proveedor={selectedProveedor}
+	{zonas}
+	onSubmit={handleSubmitProveedor}
+	onClose={() => (isFormModalOpen = false)}
+/>
 
 <ModalConfirm
 	isOpen={isConfirmModalOpen}

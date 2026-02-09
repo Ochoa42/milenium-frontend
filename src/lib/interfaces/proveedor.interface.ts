@@ -7,10 +7,10 @@ export interface Proveedor {
 	apellido_materno: string;
 	esta_activo: boolean;
 	empresa: string;
-	Zona:{
+	Zona: {
 		id: string;
 		nombre: string;
-	}
+	};
 }
 export interface ProveedorStractData {
 	id: string;
@@ -40,6 +40,10 @@ export interface ProveedorFilters {
 
 export interface CreateProveedorDto {
 	nombre: string;
+	apellido_paterno: string;
+	apellido_materno: string;
+	empresa: string;
+	zona_id: string;
 	telefono: string;
 	direccion: string;
 }

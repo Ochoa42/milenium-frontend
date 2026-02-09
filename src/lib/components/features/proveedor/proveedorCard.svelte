@@ -12,7 +12,7 @@
 	let { proveedor, onEdit, onDelete }: Props = $props();
 
 	let isDropdownOpen = $state(false);
-	let width: number = $state(44);
+	let width: number = $state(150);
 
 	function getNombreCompleto(): string {
 		return `${proveedor.nombre} ${proveedor.apellido_paterno} ${proveedor.apellido_materno}`.trim();
