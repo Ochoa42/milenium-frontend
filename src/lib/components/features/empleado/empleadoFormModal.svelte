@@ -190,7 +190,7 @@
 	>
 		<div
 			use:clickOutside={handleClose}
-			class="h-full w-full max-w-2xl overflow-y-auto rounded-lg bg-light-one shadow-xl"
+			class="h-full w-full max-w-3xl overflow-y-auto rounded-lg bg-light-one shadow-xl"
 			transition:scale={{ duration: 200, start: 0.95 }}
 		>
 			<div
