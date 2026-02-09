@@ -48,7 +48,6 @@
 					label: 'Anticipos',
 					href: '/v1/finanzas/anticipos'
 				},
-				{ id: 'finanzas-matadero', label: 'Matadero Avicor', href: '/v1/finanzas/matadero' },
 				{ id: 'finanzas-deudas', label: 'Deudas', href: '/v1/finanzas/deudas' },
 				{ id: 'finanzas-anticipos', label: 'Anticipos', href: '/v1/finanzas/anticipos' }
 			]

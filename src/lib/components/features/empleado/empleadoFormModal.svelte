@@ -190,7 +190,7 @@
 	>
 		<div
 			use:clickOutside={handleClose}
-			class="h-full w-full overflow-y-auto rounded-lg bg-light-one shadow-xl"
+			class="h-full w-full max-w-2xl overflow-y-auto rounded-lg bg-light-one shadow-xl"
 			transition:scale={{ duration: 200, start: 0.95 }}
 		>
 			<div
@@ -206,7 +206,7 @@
 				<!-- Datos Personales -->
 				<div class="mb-6">
 					<h3 class="mb-4 text-lg font-semibold text-light-black">Datos Personales</h3>
-					<div class="grid grid-cols-4 gap-4">
+					<div class="grid grid-cols-3 gap-4">
 						<div class="col-span-1">
 							<Input
 								type="text"
@@ -233,7 +233,7 @@
 							/>
 						</div>
 
-						<div class="col-span-2">
+						<div class="col-span-1">
 							<Input
 								type="date"
 								id="fecha_nacimiento"
