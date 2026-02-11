@@ -24,32 +24,30 @@
 			hasSubmenu: true,
 			submenu: [
 				{
-					id: 'cuentas-cobrar',
+					id: 'finanzas-cuentas-cobrar',
 					label: 'Cuentas por cobrar',
 					href: '/v1/finanzas/cuentas-cobrar'
 				},
 				{
-					id: 'venta-productos-pedidos',
+					id: 'finanzas-venta-productos-pedidos',
 					label: 'Venta productos/pedidos',
 					href: '/v1/finanzas/venta-productos-pedidos'
 				},
 				{
-					id: 'egresos',
+					id: 'finanzas-egresos',
 					label: 'Egresos',
 					href: '/v1/finanzas/egresos'
 				},
 				{
-					id: 'ingresos',
+					id: 'finanzas-ingresos',
 					label: 'Ingresos',
 					href: '/v1/finanzas/ingresos'
 				},
 				{
-					id: 'anticipos',
+					id: 'finanzas-anticipos',
 					label: 'Anticipos',
 					href: '/v1/finanzas/anticipos'
-				},
-				{ id: 'finanzas-deudas', label: 'Deudas', href: '/v1/finanzas/deudas' },
-				{ id: 'finanzas-anticipos', label: 'Anticipos', href: '/v1/finanzas/anticipos' }
+				}
 			]
 		},
 		{
@@ -57,33 +55,41 @@
 			label: 'Administración',
 			icon: SettingsIcon,
 			hasSubmenu: true,
-			submenu: []
+			submenu: [
+				{
+					id: 'administracion-vitacora',
+					label: 'Vitacora',
+					href: '/v1/administracion/vitacora'
+				},
+				{
+					id: 'administracion-stock-productos-terminados',
+					label: 'Stock Productos Terminados',
+					href: '/v1/administracion/stock-productos-terminados'
+				},
+				{
+					id: 'administracion-traspaso-entre-sucursales',
+					label: 'Traspaso entre sucursales',
+					href: '/v1/administracion/traspaso-sucursales'
+				},
+				{
+					id: 'administracion-reporte-gastos',
+					label: 'Reporte gastos',
+					href: '/v1/administracion/reporte-gastos'
+				},
+				{
+					id: 'administracion-reportes',
+					label: 'Reportes',
+					href: '/v1/administracion/reportes'
+				}
+			]
 		},
-		{
-			id: 'roles',
-			href: '/v1/roles',
-			label: 'Roles',
-			icon: SettingsIcon,
-			hasSubmenu: false,
-			submenu: []
-		},
+
 		{
 			id: 'usuarios',
 			label: 'Usuarios',
 			icon: UsersIcon,
-			href: '/v1/usuarios',
 			hasSubmenu: true,
 			submenu: [
-				{
-					id: 'usuarios-administradores',
-					label: 'Administradores',
-					href: '/v1/usuarios/administrador'
-				},
-				{
-					id: 'usuarios-empleados',
-					label: 'Empleados',
-					href: '/v1/usuarios/empleados'
-				},
 				{
 					id: 'usuarios-clientes',
 					label: 'Clientes',
@@ -95,20 +101,61 @@
 					href: '/v1/usuarios/proveedores'
 				},
 				{
-					id: 'usuarios-promotor-ventas',
-					label: 'Promotor ventas',
-					href: '/v1/usuarios/promotor-ventas'
+					id: 'usuarios-personal-administrativo',
+					label: 'Personal administrativo',
+					href: '/v1/usuarios/personal-administrativo'
+				},
+				{
+					id: 'usuarios-caja-apertura-cierre',
+					label: 'Caja apertura y cierre',
+					href: '/v1/usuarios/caja-apertura-cierre'
+				},
+				{
+					id: 'usuarios-roles-permisos',
+					label: 'Roles y permisos',
+					href: '/v1/usuarios/roles-permisos'
 				}
 			]
 		},
-
 		{
-			id: 'granjas',
-			label: 'Granjas',
-			icon: ShieldIcon,
+			id: 'productos',
+			label: 'Productos',
+			icon: UsersIcon,
+			href: '/v1/productos',
 			hasSubmenu: true,
-			submenu: []
+			submenu: [
+				{
+					id: 'productos-registrar-producto',
+					label: 'Registrar producto',
+					href: '/v1/productos/registrar-producto'
+				},
+				{
+					id: 'productos-proforma',
+					label: 'Proforma',
+					href: '/v1/productos/proforma'
+				},
+				{
+					id: 'productos-compra',
+					label: 'Compra',
+					href: '/v1/productos/compra'
+				}
+			]
 		},
+		{
+			id: 'gestion-sucursales',
+			label: 'Gestion sucursales',
+			icon: UsersIcon,
+			href: '/v1/sucursales',
+			hasSubmenu: false
+		},
+		// {
+		// 	id: 'roles',
+		// 	href: '/v1/roles',
+		// 	label: 'Roles',
+		// 	icon: SettingsIcon,
+		// 	hasSubmenu: false,
+		// 	submenu: []
+		// },
 		{
 			id: 'zonas',
 			label: 'Zonas',
