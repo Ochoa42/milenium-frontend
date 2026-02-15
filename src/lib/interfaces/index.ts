@@ -8,3 +8,5 @@ export * from './cliente.interface';
 export * from './zona.interface';
 export * from './proveedor.interface';
 export * from './empleado.interface';
+export * from './marca.interface';
+export * from './unidadMedida.interface';

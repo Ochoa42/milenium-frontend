@@ -6,3 +6,5 @@ export * from './zona.service';
 export * from './cliente.service';
 export * from './proveedor.service';
 export * from './empleado.service';
+export * from './marca.service';
+export * from './unidadMedida.service';

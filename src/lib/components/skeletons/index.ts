@@ -5,3 +5,5 @@ export { default as CompraPolloTableSkeleton } from './compraPolloTableSkeleton.
 export { default as ProveedorTableSkeleton } from './proveedorTableSkeleton.svelte';
 export { default as VentaPolloTableSkeleton } from './ventaPolloTableSkeleton.svelte';
 export { default as DespachoTableSkeleton } from './despachoTableSkeleton.svelte';
+export { default as MarcaTableSkeleton } from './marcaTableSkeleton.svelte';
+export { default as UnidadMedidaTableSkeleton } from './unidadMedidaTableSkeleton.svelte';

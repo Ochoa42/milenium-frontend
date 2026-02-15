@@ -125,9 +125,9 @@
 			hasSubmenu: true,
 			submenu: [
 				{
-					id: 'productos-registrar-producto',
+					id: 'productos-productos',
 					label: 'Registrar producto',
-					href: '/v1/productos/registrar-producto'
+					href: '/v1/productos/productos'
 				},
 				{
 					id: 'productos-proforma',
@@ -138,6 +138,16 @@
 					id: 'productos-compra',
 					label: 'Compra',
 					href: '/v1/productos/compra'
+				},
+				{
+					id: 'productos-marcas',
+					label: 'Marcas',
+					href: '/v1/productos/marcas'
+				},
+				{
+					id: 'productos-unidad-medida',
+					label: 'Unidad de medida',
+					href: '/v1/productos/unidad-medida'
 				}
 			]
 		},
