@@ -5,3 +5,4 @@ export * from './empleado';
 export * from './proveedor';
 export * from './marca';
 export * from './unidadMedida';
+export * from './categoria';

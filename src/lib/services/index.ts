@@ -8,3 +8,4 @@ export * from './proveedor.service';
 export * from './empleado.service';
 export * from './marca.service';
 export * from './unidadMedida.service';
+export * from './categoria.service';

@@ -148,6 +148,11 @@
 					id: 'productos-unidad-medida',
 					label: 'Unidad de medida',
 					href: '/v1/productos/unidad-medida'
+				},
+				{
+					id: 'productos-categorias',
+					label: 'Categorias',
+					href: '/v1/productos/categorias'
 				}
 			]
 		},

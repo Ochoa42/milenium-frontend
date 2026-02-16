@@ -10,3 +10,4 @@ export * from './proveedor.interface';
 export * from './empleado.interface';
 export * from './marca.interface';
 export * from './unidadMedida.interface';
+export * from './categoria.interface';
